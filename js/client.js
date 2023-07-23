@@ -11,7 +11,8 @@ window.TrelloPowerUp.initialize({
   },
   'card-badges': function (t, opts) {
     return [{
-      text: '3'
+      text: '3',
+      color: 'blue'
     }]
   }
 });
