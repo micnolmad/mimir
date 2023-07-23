@@ -1,5 +1,5 @@
-TrelloPowerUp.initialize({
-  'card-buttons': function (t, opts){
+window.TrelloPowerUp.initialize({
+  'card-buttons': function (t, opts) {
     return [{
       icon: '/images/mimir.svg',
       text: 'Estimate Size',
@@ -9,4 +9,9 @@ TrelloPowerUp.initialize({
       }
     }];
   },
+  'card-badges': function (t, opts) {
+    return [{
+      text: '3'
+    }]
+  }
 });
