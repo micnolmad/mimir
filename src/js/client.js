@@ -3,7 +3,7 @@ window.TrelloPowerUp.initialize({
     return [{
       icon: '/src/images/mimir.svg',
       text: 'Estimate Size',
-      condition: 'Always'
+      condition: 'always'
     }];
   },
 });
