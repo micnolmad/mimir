@@ -1,7 +1,7 @@
 TrelloPowerUp.initialize({
   'card-buttons': function (t, opts){
     return [{
-      icon: '/src/images/mimir.svg',
+      icon: 'https://mimir-po-trello.netlify.app/src/images/mimir.svg',
       text: 'Estimate Size',
       condition: 'always',
       callback: function (t) {
