@@ -1,3 +1,7 @@
+var mimirGetTime = function() {
+  return '3';
+};
+
 window.TrelloPowerUp.initialize({
   'card-buttons': function (t, opts) {
     return [{
@@ -11,7 +15,7 @@ window.TrelloPowerUp.initialize({
   },
   'card-badges': function (t, opts) {
     return t.get('card') [{
-      text: '3',
+      text: mimirGetTime,
       color: 'blue'
     }]
   }
