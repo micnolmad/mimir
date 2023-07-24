@@ -5,7 +5,7 @@ window.TrelloPowerUp.initialize({
       text: 'Estimate Size',
       condition: 'always',
       callback: function (t) {
-        return t.card().then(card => alert('hello world'))
+        return t.card().then(card => alert('hello world!'))
       }
     }];
   },
