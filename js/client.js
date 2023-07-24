@@ -12,7 +12,7 @@ window.TrelloPowerUp.initialize({
   'card-badges': function (t, opts) {
     return t.get('card') [{
       text: '3',
-      color: 'sky'
+      color: 'blue'
     }]
   }
 });
