@@ -14,7 +14,7 @@ window.TrelloPowerUp.initialize({
     }];
   },
   'card-badges': function (t, opts) {
-    return t.get('card') [{
+    return [{
       text: mimirGetTime,
       color: 'blue'
     }]
