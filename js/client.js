@@ -14,9 +14,10 @@ window.TrelloPowerUp.initialize({
     }];
   },
   'card-badges': function (t, opts) {
+
     return [{
-      text: mimirGetTimes,
-      color: 'blue'
+      text: mimirGetTime,
+      color: 'sky'
     }];
   }
 });
