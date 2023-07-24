@@ -10,8 +10,8 @@ window.TrelloPowerUp.initialize({
     }];
   },
   'card-badges': function (t, opts) {
-    return t.get('card') [{
-      text: '3'
-    }]
-  }
+  return t.get('card')
+  .then(function (data) {
+    console.log(JSON.stringify(data, null, 2))
+  })
 });
