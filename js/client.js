@@ -15,10 +15,18 @@ window.TrelloPowerUp.initialize({
     }];
   },
   'card-badges': function (t, opts) {
-    return [{
-      text: mimirGetTime(1,t)
-      ,color: 'sky'
-      ,condition: 'always'
-    }];
+    return t
+    .card('name')
+    .get('name')
+    .then(function (cardName) {
+      console.log('TEST'+cardName);
+      return [{
+            text: mimirGetTime(1,t)
+            ,color: 'sky'
+            ,condition: 'always'
+          }];
+
+    }
+  )
   }
 });
