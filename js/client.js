@@ -1,5 +1,5 @@
-var mimirGetTime = function() {
-  return '3';
+var mimirGetTime = function(thing) {
+  return thing;
 };
 
 window.TrelloPowerUp.initialize({
@@ -15,7 +15,7 @@ window.TrelloPowerUp.initialize({
   },
   'card-badges': function (t, opts) {
     return [{
-      text: mimirGetTime()
+      text: mimirGetTime(4)
       ,color: 'sky'
       ,condition: 'always'
     }];
