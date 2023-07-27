@@ -13,20 +13,10 @@ window.TrelloPowerUp.initialize({
         return t.card().then(card => alert('hello world!'))
       }
     }];
-  },
-  'card-badges': function (t, opts) {
-    return t
-    .card('name')
-    .get('name')
-    .then(function (cardName) {
-      console.log('TEST'+cardName);
-      return [{
-            text: mimirGetTime(1,t)
-            ,color: 'sky'
-            ,condition: 'always'
-          }];
-
-    }
-  )
+  }
+  ,'card-badges': function (t, opts) {
+    return t.card("all").then(function (card) {
+      console.log(JSON.stringify(card, null, 2));
+    });
   }
 });
